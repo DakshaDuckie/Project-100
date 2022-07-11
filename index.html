@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Collage Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <center>
+                <h1>Collage Making App
+                    <img src ="photo.png" id="photo_img">
+                </h1>
+                <hr>
+                <h4 style="color:rgb(190, 123, 0);">When the pop-up comes, please allow camera and microphone access, or this will not work. Then you can start.</h4>
+                <button id="start-btn" class="btn btn-warning" type="button" onclick="start()">Start</button>
+                <p>Press the Start button, then begin speaking</p>
+                <label>Your webcam : </label>
+                <div id="camera">
+    
+                </div>
+                <br>
+    
+                <label>Your Collage Will Display Here: </label>
+                <div id="resultRow">
+                    <div id="result1">
+                        <img src="pic.png" id="image1" class="selfies" >
+                    </div>
+                    <br>
+                    <div id="result2">
+                        <img src="pic.png" id="image2" class="selfies">
+                    </div>
+                    <br>
+                    <div id="result3">
+                        <img src="pic.png" id="image3" class="selfies">
+                    </div>
+                </div>
+                <br> <br>
+            </center>
+        </div>
+        <div id="footer">
+            Made by: Daksha Ranjan
+        </div>
+</body>
+</html>
