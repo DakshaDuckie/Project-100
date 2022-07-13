@@ -8,25 +8,23 @@ function start(){
 recognition.onresult=function(event){
     Content = event.results[0][0].transcript.toLowerCase();
     console.log(Content);
-    
+    if (Content == "take my collage") {
+        speak();
+    }
 };
-
-camera = document.getElementById("camera");
 Webcam.set({
-    width:500,
-    height:400,
+    width:400,
+    height:300,
     image_format : 'jpeg',
     jpeg_quality:90
 });
 
 
-
+var camera = document.getElementById("camera");
 function speak(){
-    
-    
+     
     var synth = window.speechSynthesis;
     Webcam.attach(camera);
-
     speak_data = "Taking your next Selfie in 5 seconds";
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
